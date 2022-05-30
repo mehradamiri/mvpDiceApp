@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "kalame";
+    src: url(./font/KalamehWeb_Black.ttf);
+  }
+
+body{background-color: #1D1D1D;}
+
+.dicecard{
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    display: inline-flex;
+    width: 104px;
+    justify-content: center;
+    background: #282828;
+    border: 7px solid #000000;
+    border-radius: 14px;
+    }
+
+.dice{
+        padding: 20px;
+    }
+
+.diceName{  
+    font-family: "kalame";
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 32px;
+    width: 164px;
+    color: red;
+}
+
+.range {
+width: 346px;
+height: 39px;
+background: #DC3E3E;
+box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.25);
+border-radius: 14px;
+
+}
+
+p{
+        word-wrap: break-word;
+    color: #ffff;
+    width: 165px;
+font-family: 'KalamehWeb';
+font-weight: 900;
+font-size: 20px;
+line-height: 34px;
+color: #FFFFFF;
+text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+#rollBtn{
+    display: inline;
+width: 158px;
+height: 70px;
+margin-bottom: 0px;
+font-family: "kalame";
+font-size: 32px;
+color: aliceblue;
+border: none;
+margin-right: -15px;
+margin-top: 5px;
+background: #DC3E3E;
+box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
+border-radius: 14px;
+}
+
+#diceNum{
+    display: inline;
+}
+
+.box .slider {
+    width: 317px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+

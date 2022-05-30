@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/ani.css">
+</head>
+<body class="container">
+    <div class="d-flex container justify-content-center">
+      <div class="dicecard" onclick="push(4)"style="margin-right: 60px;" >
+          <img src="asset/img/D4.svg" class="dice">
+      </div>  
+      
+      <div class="dicecard" onclick="push(6)" >
+        <img src="asset/img/D6.svg" class="dice" >
+    </div><br>
+   </div>
+   <div class="d-flex container justify-content-center">
+<p class="diceName" onclick="push(4)">D4</p>
+<p class="diceName" onclick="push(6)">D6</p>
+    </div>
+    <div class="d-flex container justify-content-center">
+        <div class="dicecard" onclick="push(8)"style="margin-right: 60px;" >
+            <img src="asset/img/D8.svg" class="dice">
+        </div>  
+        
+        <div class="dicecard" onclick="push(10)">
+          <img src="asset/img/D10.svg" class="dice" >
+      </div><br>
+     </div>
+     <div class="d-flex container justify-content-center">
+  <p class="diceName" onclick="push(8)">D8</p>
+  <p class="diceName" onclick="push(10)">D10</p>
+      </div>
+      <div class="d-flex container justify-content-center">
+        <div class="dicecard" onclick="push(12)"style="margin-right: 60px;" >
+            <img src="asset/img/D12.svg" class="dice">
+        </div>  
+        
+        <div class="dicecard" onclick="push(20)">
+          <img src="asset/img/D20.svg" class="dice" >
+      </div><br>
+     </div>
+     <div class="d-flex container justify-content-center">
+  <p class="diceName" onclick="push(12)">D12</p>
+  <p class="diceName" onclick="push(20)">D20</p>
+      </div>
+      <div class="d-flex container justify-content-center">
+        <div class="dicecard" onclick="push(100)"style="margin-right: 60px;" >
+            <img src="asset/img/100.svg" class="dice">
+        </div>  
+        
+        <div class="dicecard" >
+          <img src="asset/img/_.svg" class="dice" >
+      </div><br>
+     </div>
+     <div class="d-flex container justify-content-center">
+  <p class="diceName" onclick="push(100)">D100</p>
+  <p class="diceName" onclick="push()" id="Dcustom">D50</p>
+      </div>
+      <div id="slider-container">
+        <div id="js-slider"></div>
+      </div>
+      <div>
+      <div class="d-flex justify-content-center container range align-content-center box">
+      <input type="range"  min="2"
+      max="1000" value="50" class="slider " id="myRange">
+    </div>
+    <div class="rollBtn container bg-info d-flex  justify-content-end " style="width: 346px;">
+    
+    <div class="d-inline">
+    <p onclick="getNull()" id="diceNum"></p>
+    <button onclick="rollBtn()" class="button gradient-button" id="rollBtn">roll</button>
+    </div>
+</div>
+    </div>
+    <div>
+
+    </div>
+    <script src="asset/js/main.js"></script>
+</body>
+</html>
