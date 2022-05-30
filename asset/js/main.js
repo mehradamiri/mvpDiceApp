@@ -2,10 +2,11 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("Dcustom");
 var diceNum = document.getElementById("diceNum")
 let mainNum = 0 ;
+let sliderNum
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
-  output.innerHTML = "D"+ this.value;
+  output.innerHTML = this.value;
 }
 function push(max){
   if(mainNum != 0){
@@ -15,7 +16,7 @@ function push(max){
   // mainNum = Math.floor(Math.random() * max) + 1; 
   diceNum.innerHTML =  diceNum.innerHTML + "+" + max + "D" ;
   mainNum = mainNum + Math.floor(Math.random() * max) + 1;
-
+  
 }
 function getNull() {
   diceNum.innerHTML = ""
@@ -28,20 +29,7 @@ function rollBtn() {
   diceNum.innerHTML = mainNum ;
 }
 
-var animateButton = function(e) {
-
-  e.preventDefault;
-  //reset animation
-  e.target.classList.remove('animate');
-  
-  e.target.classList.add('animate');
-  setTimeout(function(){
-    e.target.classList.remove('animate');
-  },700);
-};
-
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-for (var i = 0; i < bubblyButtons.length; i++) {
-  bubblyButtons[i].addEventListener('click', animateButton, false);
+function pushcustom() {
+sliderNum = parseInt(slider.value)
+push(slider.value)
 }

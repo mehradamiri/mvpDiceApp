@@ -42,11 +42,9 @@ border-radius: 14px;
 }
 
 p{
-        word-wrap: break-word;
-    color: #ffff;
-    width: 165px;
+color: #ffff;
+width: 165px;
 font-family: 'KalamehWeb';
-font-weight: 900;
 font-size: 20px;
 line-height: 34px;
 color: #FFFFFF;
@@ -62,7 +60,7 @@ font-family: "kalame";
 font-size: 32px;
 color: aliceblue;
 border: none;
-margin-right: -15px;
+margin-right: 10px;
 margin-top: 5px;
 background: #DC3E3E;
 box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
@@ -71,6 +69,7 @@ border-radius: 14px;
 
 #diceNum{
     display: inline;
+        word-wrap: break-word;
 }
 
 .box .slider {
@@ -80,3 +79,8 @@ border-radius: 14px;
     align-items: center;
 }
 
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  
